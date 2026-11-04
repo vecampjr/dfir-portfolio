@@ -1,14 +1,28 @@
-mkdir dfir-portfolio
-cd dfir-portfolio
+DFIR Portfolio
 
-git init -b main
+01-acquisition
+├── README.md
+├── evidence-acquisition-lab.md
+└── chain-of-custody-template.md
 
-for d in 01-acquisition 02-disk-analysis 03-mobile 04-scripts; do
-  mkdir "$d"
-  echo "# $d" > "$d/README.md"
-done
+02-disk-analysis
+├── README.md
+├── autopsy-investigation.md
+└── findings.md
 
-echo "# DFIR Portfolio" > README.md
+03-mobile
+├── README.md
+└── mobile-forensics-lab.md
 
-git add .
-git commit -m "Initial structure"
+04-scripts
+├── README.md
+├── hash_verifier.py
+└── file_metadata.py
+
+05-memory-forensics
+├── README.md
+└── volatility-investigation.md
+
+06-incident-response
+├── README.md
+└── incident-report.md
